@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SurveyForm</title>
+	<link rel="stylesheet" type="text/css" href="css/survey.css">
+</head>
+<body>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<div id="page-wrap" class="center"><h1 id="title">Favorite Anime Survey</h1>
+		<p id="description">Thank you for taking the time to help us know what your favorite anime show is
+		</p>
+		<form id="survey-form">
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label>
+				<input 
+				type="text" 
+				name="name"
+				id="name"
+				class="form-control"
+				placeholder="Enter your name"
+				required
+				/>
+			</div>
+			<div class="form-group">
+				<label id="email-label" for="email">Email</label>
+				<input 
+				type="email" 
+				name="email"
+				id="email"
+				class="form-control"
+				placeholder="Enter your Email"
+				required
+				/>
+			</div>
+			<div class="form-group">
+				<label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+				<input 
+				type="number" 
+				name="age"
+				id="number"
+				min="10"
+				max="99" 
+				class="form-control"
+				placeholder="Age"
+				/>
+			</div>
+			<div class="form-group">
+				<p>Which option best describes you?</p>
+				<select id="dropdown" name="role" class="form-control" required>
+					<option disabled selected value>Select current status</option>
+					<option value="longTime">Long time Anime Watcher</option>
+					<option value="shortTime">Short time Anime Watcher</option>
+					<option value="Reader">Manga Reader</option>
+					<option value="preferNo">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<div>
+				<p>
+					Which anime did you start off with?
+				</p>
+					<select id="start" name="startwith" class="form-control" required>
+						<option disabled selected value>Select an option</option>
+						<option value="dbz">DragonBallZ</option>
+						<option value="pokemon">Pokemon</option>
+						<option value="naruto">Naruto</option>
+						<option value="mha">My Hero Acadamia</option>
+						<option value="aot">Attack on Titan</option>	
+					</select>
+			</div>
+			<div>
+				<p>
+					Who is your favorite character?
+				</p>
+					<select id="favorite" name="favoritecharacter" class="form-control" required>
+						<option disabled selected value>Select an option</option>
+						<option value="goku">Goku</option>
+						<option value="pikachu">Pikachu</option>
+						<option value="naruto">Naruto</option>
+						<option value="deku">Deku</option>
+						<option value="erin">Erin Jager</option>	
+					</select>
+			</div>
+			<div class="form-group">
+				<p> How do you watch your anime?</p>
+				<label>
+					<input 
+					type="radio"
+					name="user-watch"
+					value="subbed"
+					class="input-radio"
+					checked/>
+					Subbed
+				</label>
+				<label>
+					<input 
+					type="radio"
+					name="user-watch"
+					value="dubbed"
+					class="input-radio"/>
+					Dubbed
+				</label>
+				</div>
+
+			<div class="form-group">
+				<p>
+					How do you watch your anime?
+				</p>
+
+				<label
+				><input 
+				type="checkbox" 
+				name="prefer"
+				value="crunchyroll"
+				class="input-checkbox"/>
+				Crunchyroll
+					
+				</label>
+				<label
+				><input 
+				type="checkbox" 
+				name="prefer"
+				value="vrv"
+				class="input-checkbox"/>
+				VRV
+					
+				</label>
+				<label
+				><input 
+				type="checkbox" 
+				name="prefer"
+				value="funimation"
+				class="input-checkbox"/>
+				Funimation
+					
+				</label>
+				<label
+				><input 
+				type="checkbox" 
+				name="prefer"
+				value="netflix"
+				class="input-checkbox"/>
+				Netflix
+					
+				</label>
+				
+			</div>
+			<div class="form-group">
+				<p>Any Anime not listed</p>
+				<textarea 
+				id="comments"
+				class="input-textarea"
+				name="comment"
+				placeholder="Enter your comment here...">
+				</textarea>
+			</div>
+			<div class="form-group">
+				<button type="submit" id="submit" class="submit-button">
+					Submit
+				</button>
+				
+			</div>
+
+
+
+			
+		</form>
+
+
+
+
+	</div>
+
+</body>
+</html>
